@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.7ab76f3f4e9a869322685c902baa707b.js"
+  "/precache-manifest.387f44dac5a4857e617c7a2831f8f8a3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ioninc-sneakersx"});
