@@ -45,7 +45,7 @@
         },
         mounted () {
             this.axios
-                .get('http://sneakerx.test/api/news/' + this.$route.params.id)
+                .get('http://sneakersx.herokuapp.com/api/news/' + this.$route.params.id)
                 .then((response) => {
                     this.news = response.data
                 })
