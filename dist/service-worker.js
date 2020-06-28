@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.30411c3e6040a711827702d088f321d9.js"
+  "/precache-manifest.447b1aabd2fd3b86921128975db2ac7a.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "ioninc-sneakersx"});
+workbox.core.setCacheNameDetails({prefix: "ionic-sneakersx"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
