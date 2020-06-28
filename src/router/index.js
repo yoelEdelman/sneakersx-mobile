@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Home from '../views/Home.vue';
 import { IonicVueRouter } from '@ionic/vue';
-import News from "../views/News";
-import Brands from "../views/Brands";
 
 Vue.use(IonicVueRouter);
 
@@ -18,9 +16,8 @@ export default new IonicVueRouter({
     {
       path: '/news',
       name: 'news',
-      component: News
-      // component: () =>
-      //     import( '../views/News.vue')
+      component: () =>
+          import( '../views/News.vue')
     },
     {
       path: '/new/:id',
@@ -30,9 +27,8 @@ export default new IonicVueRouter({
     {
       path: '/brands',
       name: 'brands',
-      component: Brands
-      // component: () =>
-      //     import( '../views/Brands.vue')
+      component: () =>
+          import( '../views/Brands.vue')
     },
     {
       path: '/brand/:id',

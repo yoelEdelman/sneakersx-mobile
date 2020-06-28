@@ -101,7 +101,7 @@
                         }
                     }
                     this.axios
-                        .post('https://sneakersx.herokuapp.com/api/contact', {
+                        .post('http://sneakerx.test/api/contact', {
                             name: this.name,
                             email: this.email,
                             phone: this.phone,
