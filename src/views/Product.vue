@@ -35,8 +35,10 @@
                             </ion-slides>
                         </ion-card-header>
                         <ion-card-title>{{ product.name }}</ion-card-title>
-                        <ion-card-content>{{ product.price }} €</ion-card-content>
+                        <ion-card-content>Date de sortie : {{ product.release_date }}</ion-card-content>
+                        <ion-card-content>Prix : {{ product.price }} €</ion-card-content>
                         <ion-card-content v-html="product.description"></ion-card-content>
+                        <ion-button fill="outline" slot="end" :href="'http://sneakersx.herokuapp.com/products/' + this.$route.params.id">Voir sur le site</ion-button>
                     </ion-card>
 
                 </ion-content>
@@ -64,6 +66,7 @@
                 .get('https://sneakersx.herokuapp.com/api/products/' + this.$route.params.id)
                 .then((response) => {
                     this.product = response.data
+                    console.log(this.product)
                 })
         },
     }
