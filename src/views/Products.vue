@@ -66,7 +66,7 @@
         },
         mounted () {
             this.axios
-                .get('https://sneakersx.herokuapp.com/api/products/')
+                .get('https://sneakersx.herokuapp.com/api/products')
                 .then((response) => {
                     this.products = response.data
                 })
